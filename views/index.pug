@@ -1,1 +1,101 @@
-h1 hello Duy
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href='./css/style.css', rel='stylesheet', type='text/css', media='all')
+        link(href='./css/menu.css', rel='stylesheet', type='text/css', media='all')
+        script(src='./js/jquery.min.js')
+        script(src='./js/script.js', type='text/javascript')
+        script(type='text/javascript', src='./js/move-top.js')
+        script(type='text/javascript', src='./js/easing.js')
+        link(href='//fonts.googleapis.com/css?family=Monda', rel='stylesheet', type='text/css')
+        link(href='//fonts.googleapis.com/css?family=Doppio+One', rel='stylesheet', type='text/css')
+
+        title QuangDuy Layout webshop
+    body 
+        .header
+            .header_top
+                .logo
+                    a(href='index.html')
+                        img(src='./images/logo.png', alt='')
+                .header_top_right
+                    .search_box
+                        form
+                            input(type='text', value='Tìm sản phẩm', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Tìm sản phẩm';}")
+                            input(type='submit', value='Tìm')
+                    .shopping_cart
+                        .cart
+                            a(href='#', title='View my shopping cart', rel='nofollow')
+                                strong.opencart  
+                                span.cart_title Giỏ hàng
+                                span.no_product (0)
+                    .currency(title='currency')
+                        #currency.wrapper-dropdown(tabindex='1')
+                            | Đ
+                            strong.opencart  
+                    .login
+                        span
+                            a(href='login.html')
+                                img(src='images/login.png', alt='', title='login')
+                    .clear
+                .clear
+            .h_menu
+                a#touch-menu.mobile-menu(href='#') Menu
+                nav
+                    ul.menu.list-unstyled
+                        li
+                            a(href='index.html') HOME
+                        li.activate
+                            a(href='products.html') Products
+                            ul.sub-menu.list-unstyled
+                                .nag-mother-list
+                                    .navg-drop-main
+                                        .nav-drop
+                                            li
+                                                a(href='products.html') Product 1
+                                            li
+                                                a(href='products.html') Product 2
+                                            li
+                                                a(href='products.html') Product 3
+                                        .clear  
+                        li
+                            a(href='products.html') Top Brand
+                            ul.sub-menu.list-unstyled.sub-menu2
+                                .navg-drop-main
+                                    .nav-drop.nav-top-brand
+                                        li
+                                            a(href='products.html') Product 1
+                                        li
+                                            a(href='products.html') Product 2
+                                        li
+                                            a(href='products.html') Product 3
+                                        li
+                                            a(href='products.html') Product 4
+                                        li
+                                            a(href='products.html') Product 5
+                                        li
+                                            a(href='products.html') Product 6
+                                .clear           
+                        li
+                            a(href='faq.html') Services
+                            ul.sub-menu.list-unstyled.sub-menu3
+                                .navg-drop-main
+                                    .nav-drop
+                                        li
+                                            a(href='products.html') Product 4
+                                        li
+                                            a(href='products.html') Product 5
+                                        li
+                                            a(href='products.html') Product 6
+                            .clear  
+                        li
+                            a(href='about.html') About
+                        li
+                            a(href='#') Delivery
+                        li
+                            a(href='faq.html') Faqs
+                        li
+                            a(href='contact.html') CONTACT
+                    .clear                              
